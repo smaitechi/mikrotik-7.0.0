@@ -6,7 +6,6 @@ echo "=== https://github.com/farshad-Azad ==="
 echo "=== MikroTik 7 Installer ==="
 echo
 sleep 3
-wget https://github.com/elseif/MikroTikPatch/releases/download/7.16.2/install-image-7.16.2.zip -O chr.img.zip  && \
 gunzip -c chr.img.zip > chr.img  && \
 STORAGE=`lsblk | grep disk | cut -d ' ' -f 1 | head -n 1` && \
 echo STORAGE is $STORAGE && \
